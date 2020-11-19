@@ -9,6 +9,21 @@
   } 
   function mcatime(){
     document.getElementById("mcati").innerHTML = " ";
+    document.getElementById("caltext").style.display='visible';
+    document.getElementById("a").style.backgroundColor = 'white'; 
+    document.getElementById("b").style.backgroundColor = 'white'; 
+    document.getElementById("c").style.backgroundColor = 'white'; 
+    document.getElementById("d").style.backgroundColor = 'white'; 
+    document.getElementById("e").style.backgroundColor = 'white'; 
+    document.getElementById("f").style.backgroundColor = 'white'; 
+    document.getElementById("g").style.backgroundColor = 'white'; 
+    document.getElementById("h").style.backgroundColor = 'white'; 
+    document.getElementById("i").style.backgroundColor = 'white'; 
+    document.getElementById("j").style.backgroundColor = 'white'; 
+    document.getElementById("k").style.backgroundColor = 'white'; 
+    document.getElementById("m").style.backgroundColor = 'white'; 
+    document.getElementById("n").style.backgroundColor = 'white'; 
+    document.getElementById("o").style.backgroundColor = 'white'; 
    // $('#mcati').MCACALC().empty();
 }
 function lett(){
@@ -26,10 +41,26 @@ function lett(){
 }
 function hidecal(){
     
- setTimeout(lett,500)
-    document.getElementById("caltext").style.display='block';
+ 
+    document.getElementById("caltext").style.display='hide';
+    document.getElementById("a").style.backgroundColor = 'black'; 
+    document.getElementById("b").style.backgroundColor = 'black'; 
+    document.getElementById("c").style.backgroundColor = 'black'; 
+    document.getElementById("d").style.backgroundColor = 'black'; 
+    document.getElementById("e").style.backgroundColor = 'black'; 
+    document.getElementById("f").style.backgroundColor = 'black'; 
+    document.getElementById("g").style.backgroundColor = 'black'; 
+    document.getElementById("h").style.backgroundColor = 'black'; 
+    document.getElementById("i").style.backgroundColor = 'black'; 
+    document.getElementById("j").style.backgroundColor = 'black'; 
+    document.getElementById("k").style.backgroundColor = 'black'; 
+    document.getElementById("m").style.backgroundColor = 'black'; 
+    document.getElementById("n").style.backgroundColor = 'black'; 
+    document.getElementById("o").style.backgroundColor = 'black'; 
+    
+
 }
-s/*etInterval(()=>{
+/*setInterval(()=>{
     let print = document.getElementById('caltext').innerHTML;
     if(print == 1){
         document.getElementById("a").value = "One ";

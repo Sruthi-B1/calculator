@@ -1,5 +1,7 @@
 var intleltid = 0;
-  
+  function clr(){
+    calculator.answer.value = '';
+  }
   function MCACALC() {
     document.getElementById("mcati").innerHTML = "MCACalc fx54";
     document.getElementById("caltext").style.display='visible';
@@ -31,7 +33,7 @@ var intleltid = 0;
               {
                 document.getElementById("caltext").innerHTML = "";
                 document.getElementById("ooon").value = "ON";
-                clearInterval ( wooYayIntervalId );
+                clearInterval ( intleltid );
               }
     
   } 
@@ -93,17 +95,9 @@ var intleltid = 0;
 }
 
 function hidecal(){
-  document.getElementById("a").innerHTMLvalue = "1 ";
-  document.getElementById("b").innerHTMLvalue = "2 ";
-  document.getElementById("c").innerHTMLvalue = "3 ";
-  document.getElementById("d").innerHTMLvalue= "4 ";
-  document.getElementById("e").innerHTMLvalue= "5 ";
-  document.getElementById("f").innerHTMLvalue = "6 ";
-  document.getElementById("g").innerHTMLvalue= "7 ";
-  document.getElementById("h").innerHTMLvalue= "8 ";
-  document.getElementById("i").innerHTMLvalue = "9 ";
-  document.getElementById("j").innerHTMLvalue = "0 ";
-  document.getElementById("caltext").innerHTML = "";
+  clearInterval ( intleltid );
+  clr();
+  document.getElementById("caltext").answer = "0";
                 document.getElementById("ooon").value = "ON";
     document.getElementById('fid').disabled=true;
     document.getElementById("caltext").style.display='hide';
@@ -140,6 +134,8 @@ function hidecal(){
     document.getElementById('o').disabled=true;
     document.getElementById('p').disabled=true;
     document.getElementById('q').disabled=true;
-   
+    
+    clearInterval (ooYay);
+              
 
 }

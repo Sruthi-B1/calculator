@@ -1,4 +1,5 @@
- 
+var intleltid = 0;
+  
   function MCACALC() {
     document.getElementById("mcati").innerHTML = "MCACalc fx54";
     document.getElementById("caltext").style.display='visible';
@@ -18,11 +19,54 @@
     document.getElementById("o").style.backgroundColor = 'white'; 
     document.getElementById("p").style.backgroundColor = 'white'; 
     document.getElementById("q").style.backgroundColor = 'white'; 
-    setInterval(lett,500);
+    
     setTimeout(mcatime,4000);
-
+    if ( document.getElementById("ooon").value == "ON" )
+              {
+                // Start the timer
+                document.getElementById("ooon").value = "Hi!!";
+                intleltid = setInterval ( "wooYay()", 500 );
+              }
+              else
+              {
+                document.getElementById("caltext").innerHTML = "";
+                document.getElementById("ooon").value = "ON";
+                clearInterval ( wooYayIntervalId );
+              }
     
   } 
+  function wooYay ( )
+            {
+              if ( Math.random ( ) > .5 )
+              {
+                document.getElementById("a").value = "ONE";
+                document.getElementById("b").value = "TWO ";
+                document.getElementById("c").value = "THREE ";
+                document.getElementById("d").value = "FOUR";
+                document.getElementById("e").value = "FIVE ";
+                document.getElementById("f").value = "SIX ";
+                document.getElementById("g").value = "SEVEN ";
+                document.getElementById("h").value = "EIGHT ";
+                document.getElementById("i").value = "NINE ";
+                document.getElementById("j").value = "ZERO ";
+              }
+              else
+              {
+                document.getElementById("a").value = "1";
+                document.getElementById("b").value = "2";
+                document.getElementById("c").value = "3 ";
+                document.getElementById("d").value = "4";
+                document.getElementById("e").value = "5 ";
+                document.getElementById("f").value = "6 ";
+                document.getElementById("g").value = "7";
+                document.getElementById("h").value = "8 ";
+                document.getElementById("i").value = "9 ";
+                document.getElementById("j").value = "0 ";
+              }
+            
+              setTimeout ( 'document.getElementById("a").innerHTML = ""', 500 );
+            
+            }
   function mcatime(){
     document.getElementById("mcati").innerHTML = " ";
   
@@ -47,21 +91,20 @@
       
    // $('#mcati').MCACALC().empty();
 }
-function lett(){
-    document.getElementById("a").value = "One ";
-    document.getElementById("b").value = "Two ";
-    document.getElementById("c").value = "Three ";
-    document.getElementById("d").value = "Four ";
-    document.getElementById("e").value = "Five ";
-    document.getElementById("f").value = "Six ";
-    document.getElementById("g").value = "Seven ";
-    document.getElementById("h").value = "Eight ";
-    document.getElementById("i").value = "Nine ";
-    document.getElementById("j").value = "Zero ";
 
-}
 function hidecal(){
-    
+  document.getElementById("a").innerHTMLvalue = "1 ";
+  document.getElementById("b").innerHTMLvalue = "2 ";
+  document.getElementById("c").innerHTMLvalue = "3 ";
+  document.getElementById("d").innerHTMLvalue= "4 ";
+  document.getElementById("e").innerHTMLvalue= "5 ";
+  document.getElementById("f").innerHTMLvalue = "6 ";
+  document.getElementById("g").innerHTMLvalue= "7 ";
+  document.getElementById("h").innerHTMLvalue= "8 ";
+  document.getElementById("i").innerHTMLvalue = "9 ";
+  document.getElementById("j").innerHTMLvalue = "0 ";
+  document.getElementById("caltext").innerHTML = "";
+                document.getElementById("ooon").value = "ON";
     document.getElementById('fid').disabled=true;
     document.getElementById("caltext").style.display='hide';
     document.getElementById("a").style.backgroundColor = 'black'; 
@@ -97,5 +140,6 @@ function hidecal(){
     document.getElementById('o').disabled=true;
     document.getElementById('p').disabled=true;
     document.getElementById('q').disabled=true;
+   
 
 }
